@@ -1,0 +1,26 @@
+Standalone API makes it possible to write angular components, directives and pipes without creating an
+associated ng module.
+
+Standalone components are self contained and directly manage their template dependencies.This makes ng
+modules optional for many practical development tasks. The focus shifts from ng modules to components.
+
+Benefits:
+-> Frictionless component creation: Making ng modules optional reduces the friction of creating a new
+component.
+-> Lazy loaded made easy: The self contained components can be packaged, reused and lazy loaded on their
+own.
+
+Created this application with the cmd 'ng new walk-my-dog --inline-style --inline-template' with 14.1.0
+angular version
+
+Created a service named 'Dogs' with the cmd 'ng g s Dogs --flat' and some dogs details
+
+Created our very first component with the cmd 'ng g c DogsList --flat --standalone'
+
+And also created another component with the cmd 'ng g c DogsListCard --flat --standalone'
+
+Standalone components explicitly manage their own dependencies. We can know with certainty what is available
+in the template by expecting the component's list of imports.
+
+Created a new component with the cmd 'ng g c DogView --flat --standalone --inline-template --inline-style' for
+single page view of a particular dog
